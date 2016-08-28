@@ -1,0 +1,13 @@
+html, body {
+  padding: 0;
+}
+
+.osx {
+  height: 100%;
+  width: 100%;
+}
+
+.top-bar {
+  @include window
+  .top-bar__menu
+}
