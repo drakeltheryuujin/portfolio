@@ -1,0 +1,23 @@
+!!!
+%html
+  %head
+    %meta{:content => "text/html; charset=UTF-8", "http-equiv" => "Content-Type"}/
+    %title Portfolio
+    = csrf_meta_tags
+    = stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload'
+    = javascript_include_tag 'application', 'data-turbolinks-track': 'reload'
+  %body
+    .osx
+      .top-bar
+        %ul.top-bar__menu
+          = link_to "#", "link", class: "icon"
+          = link_to "#", "link"
+          = link_to "#", "link"
+          = link_to "#", "link"
+      .desktop
+        = yield
+      .dock
+        some icons
+    
+
+
