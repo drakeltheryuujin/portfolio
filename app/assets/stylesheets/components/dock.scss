@@ -1,0 +1,13 @@
+.dock {
+  bottom: 0;
+  position: fixed; left: 50%; float: left;
+  
+  ul {
+    padding: 0;
+    margin:0;
+    position: relative; left: -50%; float: left;
+    li {
+      @include inline-list
+    }
+ }
+}

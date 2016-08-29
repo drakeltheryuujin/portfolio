@@ -2,22 +2,41 @@
 %html
   %head
     %meta{:content => "text/html; charset=UTF-8", "http-equiv" => "Content-Type"}/
-    %title KellyeGreene.io
+    %title KellyeGreene.com
     = csrf_meta_tags
     = stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload'
     = javascript_include_tag 'application', 'data-turbolinks-track': 'reload'
+    %script{:crossorigin => "anonymous", :integrity => "sha256-eGE6blurk5sHj+rmkfsGYeKyZx3M4bG+ZlFyA7Kns7E=", :src => "https://code.jquery.com/ui/1.12.0/jquery-ui.min.js"}
+    %link{:href => "//code.jquery.com/ui/1.12.0/themes/base/jquery-ui.css", :rel => "stylesheet"}/
+
   %body
     .osx
       .top-bar
         %ul.top-bar__menu
-          = link_to "#", "link", class: "icon"
-          = link_to "#", "link"
-          = link_to "#", "link"
-          = link_to "#", "link"
+          %li
+            = link_to "Link", "#", class: "icon"
+          %li 
+            = link_to "Link", "#"
+          %li
+            = link_to "Link", "#"
       .desktop
         = yield
       .dock
-        some icons
-    
+        %ul
+          %li
+            icon
+          %li
+            icon
+          %li
+            icon
+          %li
+            icon
+          %li
+            icon
+          %li
+            icon
+          %li
+            icon
+
 
 

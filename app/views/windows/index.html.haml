@@ -1,10 +1,18 @@
-.window
-  .window__tool-bar
+.window.window--black-window{ draggable: "true" }
+  .window__toolbar
     %ul.window__toolbar__buttons
-      %li exit
-      %li minimize
-      %li maximize
+      %li 
+        %a{ href:"#", title: "exit" }
+      %li
+        %a{ href:"#", title: "minimize" }
+      %li
+        %a{ href:"#", title: "maximize" }
     %span
       name of the window
+    %div
   .window__content
-    stuff here
+    .command-line
+      %span
+        localhost:kellye_greene
+      = Time.now.utc.strftime("%T")
+      %span.branch

@@ -1,0 +1,36 @@
+.osx {
+  height: 100%;
+  width: 100%;
+
+  background-image: url("http://media.idownloadblog.com/wp-content/uploads/2015/06/Wallpaper-OS-X-El-Capitan-Mac.jpg");
+  background-attachment: fixed;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.desktop {
+  padding-top: 32px;
+  left: 0;
+  top: 0;
+  position: absolute;
+  height: 100%;
+  width: 100%;
+}
+
+.top-bar {
+  @include window-toolbar;
+  width: 100%;
+  font-size: 14px;
+
+  .top-bar__menu {
+    li {
+     @include inline-list;
+    }
+  }
+}
+
+.dock {
+  position: absolute;
+  bottom: 0;
+}

@@ -1,0 +1,47 @@
+//List styles
+@mixin inline-list {
+  float: left;
+  list-style: none;
+}
+
+//Window Styles
+@mixin window-toolbar {
+  @extend .group;
+  background: $window-bg;
+  padding: 8px 10px;
+  color: $window-toolbar-text;
+  display: table;
+  width: 100%;
+  
+  a {
+    color: $window-toolbar-text;
+  }
+  
+  ul {
+    margin: 0;
+    padding: 0;
+
+    &.window__toolbar__buttons {
+      display: table-cell;
+      width: 51px;
+    }
+  } 
+  li {
+    @include inline-list;
+  }
+  > span {
+    display: table-cell;
+    padding: 0 20px;
+    text-align: center;
+  }
+  > div {
+    display: table-cell;
+    width: 51px;
+  }
+}
+
+.group:after {
+  content: "";
+  display: table;
+  clear: both;
+} 
