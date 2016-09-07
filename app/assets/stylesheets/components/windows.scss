@@ -1,13 +1,16 @@
 .window {
   display: table;
-  position: relative;
-  min-width: 320px;
+  position: absolute !important;
+  width: 50%;
+  box-shadow: 0px 10px 15px rgba(50, 50, 50, .5);
+  z-index: 2;
 
   .window__toolbar {
     @include window-toolbar;
     position: absolute;
     top: 0;
     left: 0;
+    z-index: 2;
     border-radius: 5px 5px 0 0;
 
     .window__toolbar__buttons {
@@ -36,13 +39,17 @@
       }
     }
   }
+
 }
 
 .window--black-window {
 
   .window__content {
+    padding: 14px;
     background: $content-bg-black;
     color: $content-accent-gray;
+    border: 1px solid lighten( $content-bg-black, 5% );
+    border-top: none; 
 
     a {
       color: $content-accent-green;
@@ -66,12 +73,47 @@
   }
 }
 
+.window--white-window {
+
+  .window__content {
+    background: $content-bg-white;
+    color: $content-text-color;
+    border: 1px solid darken( $content-bg-white, 5% );
+    border-top: none; 
+
+    a {
+      color: $content-accent-blue;
+    }
+    a:visited {
+      color: $content-accent-purple;
+    }
+
+    .display-list__item:nth-child(odd) {
+      background: $content-highlight-gray;
+    }
+  }
+}
+
+
 .window__content {
+  @extend .group;
   font-size: 14px;
-  padding: 14px;
   height: 100%;
-  margin-top: 34px;
+  margin-top: 28px;
   border-radius: 0 0 5px 5px;
+  min-width: 320px;
+  min-height: 320px;
+  position: relative;
+
+  > section {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1;
+    height: 100%;
+    overflow-y: auto;
+  }
 }
 
 .command-line {

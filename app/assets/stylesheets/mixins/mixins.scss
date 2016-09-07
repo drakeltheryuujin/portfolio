@@ -7,16 +7,23 @@
 //Window Styles
 @mixin window-toolbar {
   @extend .group;
-  background: $window-bg;
-  padding: 8px 10px;
+  background: $window-toolbar-bg;
+  padding: 4px 10px;
   color: $window-toolbar-text;
   display: table;
   width: 100%;
-  
+
+  &.window__toolbar--beveled {
+    border-bottom: 1px solid $window-toolbar-bottom;
+    border-left: 1px solid  $window-toolbar-sides;
+    border-right: 1px solid  $window-toolbar-sides;
+    border-top: 1px solid  $window-toolbar-top;
+  }
+
   a {
     color: $window-toolbar-text;
   }
-  
+
   ul {
     margin: 0;
     padding: 0;
@@ -37,6 +44,22 @@
   > div {
     display: table-cell;
     width: 51px;
+  }
+}
+
+@mixin column {
+  float: left;
+  img {
+    max-width: 100%;
+  }
+  + .column-20, 
+  + .column-25, 
+  + .column-30, 
+  + .column-50 {
+    padding-left: 14px;
+    &:last-child {
+      padding-right: 14px;
+    }
   }
 }
 

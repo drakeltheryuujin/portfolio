@@ -1,0 +1,2 @@
+class PortItemCategoriesController < ApplicationController
+end

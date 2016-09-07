@@ -1,12 +1,4 @@
-.window.window--black-window{ draggable: "true" }
-  = render "window_toolbar"
-  .window__content
-    .instructions    
-      Type "about", "work", or "contact"
-    .command-line
-      %span
-        localhost:kellye_greene
-      = Time.now.utc.strftime("%T")
-      %span.branch
-        (search)
-    %input.command{ type: "text", placeholder: "Type command to continue"}
+= render "terminal"
+= render "portfolio", port_items: @port_items
+= render "about"
+= render "contact"

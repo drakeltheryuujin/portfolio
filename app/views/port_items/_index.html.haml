@@ -1,0 +1,15 @@
+- @port_items = PortItem.all
+%ul.display-list
+  - @port_items.each do |port_item| 
+    %li.display-list__item
+      %h2= port_item.title
+      .display-list__image
+        %img{ src: port_item.image }
+      %div
+        %strong
+          = port_item.year
+      %div
+        %p
+          = port_item.description
+      %div
+        = link_to "view", port_item.link, target: "_blank"

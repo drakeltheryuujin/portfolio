@@ -1,0 +1,21 @@
+.window.window--white-window{ draggable: "true" }
+  = render "window_toolbar", title: "Portfolio"
+  .window__content
+    %section
+      %article.content-filter
+        %select
+          %option
+            Date Range
+      %article.content-filter
+        %select
+          %option
+            Filter By
+          %option
+            Ruby
+          %option
+            ASP
+          %option
+            jQuery
+      %article#port_items
+        = render "port_items/index"
+       

@@ -8,35 +8,32 @@
     = javascript_include_tag 'application', 'data-turbolinks-track': 'reload'
     %script{:crossorigin => "anonymous", :integrity => "sha256-eGE6blurk5sHj+rmkfsGYeKyZx3M4bG+ZlFyA7Kns7E=", :src => "https://code.jquery.com/ui/1.12.0/jquery-ui.min.js"}
     %link{:href => "//code.jquery.com/ui/1.12.0/themes/base/jquery-ui.css", :rel => "stylesheet"}/
-
   %body
     .osx
       .top-bar
         %ul.top-bar__menu
-          %li
-            = link_to "Link", "#", class: "icon"
-          %li 
-            = link_to "Link", "#"
-          %li
-            = link_to "Link", "#"
+          %li#apple_menu
+            = link_to do
+              = fa_icon "apple"
+          %li#active_program
+            = link_to "Link"
       .desktop
         = yield
       .dock
         %ul
           %li
-            icon
+            = link_to "Terminal" do 
+              = image_tag "terminal.png"
           %li
-            icon
+            = link_to do
+              = image_tag "bio.png"
           %li
-            icon
+            = link_to do
+              = image_tag "portfolio.png"
           %li
-            icon
-          %li
-            icon
-          %li
-            icon
-          %li
-            icon
+            = link_to do
+              = image_tag "contact.png"
+        .dock__background
 
 
 

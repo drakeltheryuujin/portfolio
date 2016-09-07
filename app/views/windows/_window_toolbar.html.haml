@@ -1,12 +1,12 @@
-.window__toolbar
+.window__toolbar.window__toolbar--beveled
   %ul.window__toolbar__buttons
     %li 
-      %a{ href:"#", title: "exit" }
+      %a.close-btn{ title: "close" }
     %li
-      %a{ href:"#", title: "minimize" }
+      %a.min-btn{ title: "minimize" }
     %li
-      %a{ href:"#", title: "maximize" }
-  %span
-    name of the window
+      %a.max-btn{ title: "maximize" }
+  %span{ title: title}
+    = title
   %div
 
