@@ -1,5 +1,7 @@
 $( function() {
   var dockItems = []
+  var index = 1
+  
   $(".min-btn").on("click", function(){
     $(this).parents(".window").animate({
       top: $(window).height(),
@@ -13,8 +15,8 @@ $( function() {
       'min-height': 0,
     })
     var title = $(this).parents(".window__toolbar__buttons").siblings("span").attr("title")
-    dockItems.push(title)
-    buildDock(dockItems)
+    $(".dock ul").append('<li id="dock_item_'+ title +'"><a title="'+ title +'" href="#"><img src="assets/images/' + title.toLowerCase() +'.png"/></li>')
+    index++
   })
   $(".max-btn").on("click", function(){
     $(this).parents(".window").animate({width: $(window).width()})
@@ -22,12 +24,4 @@ $( function() {
   $(".close-btn").on("click", function(){
     $(this).parents(".window").hide()
   })
-
-  function buildDock(dockItems) {
-    dockItems.forEach(displayDockItems)
-  }
-
-  function displayDockItems(item, index, dockItems) {
-    $(".dock ul").append('<li id="dock_item_'+ index +'"><a title="'+ item +'" href="#"><img src="assets/images/' + item.toLowerCase() +'.png"/></li>')
-  }
 })
