@@ -16,22 +16,22 @@
             = link_to do
               = fa_icon "apple"
           %li#active_program
-            = link_to "Link"
+            = link_to "Terminal"
       .desktop
         = yield
       .dock
         %ul
-          %li
-            = link_to "Terminal" do 
+          %li.dock__item#dock_item_terminal.active{ onClick: "dockItemClick(this)"}
+            %a{ title: "Terminal" } 
               = image_tag "terminal.png"
-          %li
-            = link_to do
+          %li.dock__item#dock_item_bio
+            %a{ title: "Bio" } 
               = image_tag "bio.png"
-          %li
-            = link_to do
+          %li.dock__item#dock_item_portfolio
+            %a{ title: "Portfolio" } 
               = image_tag "portfolio.png"
-          %li
-            = link_to do
+          %li.dock__item#dock_item_contact
+            %a{ title: "Contact" } 
               = image_tag "contact.png"
         .dock__background
 

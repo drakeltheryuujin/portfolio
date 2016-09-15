@@ -2,13 +2,7 @@
   = render "window_toolbar", title: "Terminal"
   .window__content
     %section
-      %article
-        .instructions    
-          Type "about", "work", or "contact"
-        .command-line
-          %span
-            localhost:kellye_greene
-          = Time.now.utc.strftime("%T")
-          %span.branch
-            (search)
-        %input.command{ type: "text", placeholder: "Type command to continue"}
+      %article#terminal_window
+        .instructions
+          Type "bio", "work", or "contact"
+        = render "command_line"
