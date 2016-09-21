@@ -1,8 +1,9 @@
+- time = Time.new
 .command-line
   %span
     localhost:kellye_greene
-  = Time.now.utc.strftime("%T")
+  = time.strftime("%H:%M:%S")
   %span.branch
     (search)
-%input.command#terminal_search{ type: "text", placeholder: "Type command to continue"}
+%input.command{ type: "text", placeholder: "Type command to continue"}
 

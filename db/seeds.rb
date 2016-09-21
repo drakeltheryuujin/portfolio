@@ -11,14 +11,14 @@ Category.destroy_all
 PortItemCategory.destroy_all
 
 cnd = PortItem.create(
-      image: "assets/images/cnd.png",
+      image: "assets/images/port_items/cnd.png",
       title: "CND: Creative Nail Design",
       description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras auctor, odio et mattis blandit, justo tortor varius purus, auctor placerat neque leo et ipsum. Sed rutrum augue mollis, feugiat est ac, consectetur elit. Nunc sit amet cursus massa. Aliquam bibendum neque arcu, eget mattis ligula vestibulum vitae. Integer nec massa vel enim commodo dictum et ac velit. Vivamus nulla lorem, iaculis vel luctus vel, rhoncus eu dui. Mauris fermentum ac nisl quis condimentum. Ut sagittis elit sed orci pretium imperdiet. Aliquam euismod ex sem, feugiat tincidunt dui rutrum ac. Pellentesque sem ex, egestas nec justo euismod, tincidunt elementum ex. Nullam cursus ipsum ante, eu auctor purus vehicula quis.",
       link: "http://www.cnd.com",
       year: 2013,
       )
 eiko_koma = PortItem.create(
-      image: "assets/images/eiko+koma.png",
+      image: "assets/images/port_items/eiko+koma.png",
       title: "Eiko + Koma",
       description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras auctor, odio et mattis blandit, justo tortor varius purus, auctor placerat neque leo et ipsum. Sed rutrum augue mollis, feugiat est ac, consectetur elit. Nunc sit amet cursus massa. Aliquam bibendum neque arcu, eget mattis ligula vestibulum vitae. Integer nec massa vel enim commodo dictum et ac velit. Vivamus nulla lorem, iaculis vel luctus vel, rhoncus eu dui. Mauris fermentum ac nisl quis condimentum. Ut sagittis elit sed orci pretium imperdiet. Aliquam euismod ex sem, feugiat tincidunt dui rutrum ac. Pellentesque sem ex, egestas nec justo euismod, tincidunt elementum ex. Nullam cursus ipsum ante, eu auctor purus vehicula quis.",
       link: "http://www.eikoandkoma.org",
@@ -26,7 +26,7 @@ eiko_koma = PortItem.create(
       )
  
 enrevo = PortItem.create(
-      image: "assets/images/enrevo.png",
+      image: "assets/images/port_items/enrevo.png",
       title: "Enrevo Solar",
       description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras auctor, odio et mattis blandit, justo tortor varius purus, auctor placerat neque leo et ipsum. Sed rutrum augue mollis, feugiat est ac, consectetur elit. Nunc sit amet cursus massa. Aliquam bibendum neque arcu, eget mattis ligula vestibulum vitae. Integer nec massa vel enim commodo dictum et ac velit. Vivamus nulla lorem, iaculis vel luctus vel, rhoncus eu dui. Mauris fermentum ac nisl quis condimentum. Ut sagittis elit sed orci pretium imperdiet. Aliquam euismod ex sem, feugiat tincidunt dui rutrum ac. Pellentesque sem ex, egestas nec justo euismod, tincidunt elementum ex. Nullam cursus ipsum ante, eu auctor purus vehicula quis.",
       link: "http://www.enrevo.net",
@@ -34,7 +34,7 @@ enrevo = PortItem.create(
       )
 
 fashionweek = PortItem.create(
-      image: "assets/images/fashionweek.png",
+      image: "assets/images/port_items/fashionweek.png",
       title: "CND Fashion Week",
       description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras auctor, odio et mattis blandit, justo tortor varius purus, auctor placerat neque leo et ipsum. Sed rutrum augue mollis, feugiat est ac, consectetur elit. Nunc sit amet cursus massa. Aliquam bibendum neque arcu, eget mattis ligula vestibulum vitae. Integer nec massa vel enim commodo dictum et ac velit. Vivamus nulla lorem, iaculis vel luctus vel, rhoncus eu dui. Mauris fermentum ac nisl quis condimentum. Ut sagittis elit sed orci pretium imperdiet. Aliquam euismod ex sem, feugiat tincidunt dui rutrum ac. Pellentesque sem ex, egestas nec justo euismod, tincidunt elementum ex. Nullam cursus ipsum ante, eu auctor purus vehicula quis.",
       link: "http://cnd.com/fwdigitalhq/",
@@ -42,7 +42,7 @@ fashionweek = PortItem.create(
       )
 
 fizzbuzz = PortItem.create(
-      image: "assets/images/fizzbuzz.png",
+      image: "assets/images/port_items/fizzbuzz.png",
       title: "FizzBuzz 2.0",
       description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras auctor, odio et mattis blandit, justo tortor varius purus, auctor placerat neque leo et ipsum. Sed rutrum augue mollis, feugiat est ac, consectetur elit. Nunc sit amet cursus massa. Aliquam bibendum neque arcu, eget mattis ligula vestibulum vitae. Integer nec massa vel enim commodo dictum et ac velit. Vivamus nulla lorem, iaculis vel luctus vel, rhoncus eu dui. Mauris fermentum ac nisl quis condimentum. Ut sagittis elit sed orci pretium imperdiet. Aliquam euismod ex sem, feugiat tincidunt dui rutrum ac. Pellentesque sem ex, egestas nec justo euismod, tincidunt elementum ex. Nullam cursus ipsum ante, eu auctor purus vehicula quis.",
       link: "#",
@@ -50,7 +50,7 @@ fizzbuzz = PortItem.create(
       )
 
 kitchengo = PortItem.create(
-      image: "assets/images/kitchengo.png",
+      image: "assets/images/port_items/kitchengo.png",
       title: "KitchenGo!",
       description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras auctor, odio et mattis blandit, justo tortor varius purus, auctor placerat neque leo et ipsum. Sed rutrum augue mollis, feugiat est ac, consectetur elit. Nunc sit amet cursus massa. Aliquam bibendum neque arcu, eget mattis ligula vestibulum vitae. Integer nec massa vel enim commodo dictum et ac velit. Vivamus nulla lorem, iaculis vel luctus vel, rhoncus eu dui. Mauris fermentum ac nisl quis condimentum. Ut sagittis elit sed orci pretium imperdiet. Aliquam euismod ex sem, feugiat tincidunt dui rutrum ac. Pellentesque sem ex, egestas nec justo euismod, tincidunt elementum ex. Nullam cursus ipsum ante, eu auctor purus vehicula quis.",
       link: "#",
@@ -58,7 +58,7 @@ kitchengo = PortItem.create(
       )
 
 mcgrawhill = PortItem.create(
-      image: "assets/images/mcgrawhill.png",
+      image: "assets/images/port_items/mcgrawhill.png",
       title: "McGraw Hill Learning Solutions",
       description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras auctor, odio et mattis blandit, justo tortor varius purus, auctor placerat neque leo et ipsum. Sed rutrum augue mollis, feugiat est ac, consectetur elit. Nunc sit amet cursus massa. Aliquam bibendum neque arcu, eget mattis ligula vestibulum vitae. Integer nec massa vel enim commodo dictum et ac velit. Vivamus nulla lorem, iaculis vel luctus vel, rhoncus eu dui. Mauris fermentum ac nisl quis condimentum. Ut sagittis elit sed orci pretium imperdiet. Aliquam euismod ex sem, feugiat tincidunt dui rutrum ac. Pellentesque sem ex, egestas nec justo euismod, tincidunt elementum ex. Nullam cursus ipsum ante, eu auctor purus vehicula quis.",
       link: "http://mhlearningsolutions.mhhe.com",
@@ -66,7 +66,7 @@ mcgrawhill = PortItem.create(
       )
 
 pvblic = PortItem.create(
-      image: "assets/images/pvblic.png",
+      image: "assets/images/port_items/pvblic.png",
       title: "Pvblic",
       description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras auctor, odio et mattis blandit, justo tortor varius purus, auctor placerat neque leo et ipsum. Sed rutrum augue mollis, feugiat est ac, consectetur elit. Nunc sit amet cursus massa. Aliquam bibendum neque arcu, eget mattis ligula vestibulum vitae. Integer nec massa vel enim commodo dictum et ac velit. Vivamus nulla lorem, iaculis vel luctus vel, rhoncus eu dui. Mauris fermentum ac nisl quis condimentum. Ut sagittis elit sed orci pretium imperdiet. Aliquam euismod ex sem, feugiat tincidunt dui rutrum ac. Pellentesque sem ex, egestas nec justo euismod, tincidunt elementum ex. Nullam cursus ipsum ante, eu auctor purus vehicula quis.",
       link: "http://pvblic.com",
@@ -74,7 +74,7 @@ pvblic = PortItem.create(
       )
 
 steiner = PortItem.create(
-      image: "assets/images/steiner.png",
+      image: "assets/images/port_items/steiner.png",
       title: "Steiner Studios",
       description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras auctor, odio et mattis blandit, justo tortor varius purus, auctor placerat neque leo et ipsum. Sed rutrum augue mollis, feugiat est ac, consectetur elit. Nunc sit amet cursus massa. Aliquam bibendum neque arcu, eget mattis ligula vestibulum vitae. Integer nec massa vel enim commodo dictum et ac velit. Vivamus nulla lorem, iaculis vel luctus vel, rhoncus eu dui. Mauris fermentum ac nisl quis condimentum. Ut sagittis elit sed orci pretium imperdiet. Aliquam euismod ex sem, feugiat tincidunt dui rutrum ac. Pellentesque sem ex, egestas nec justo euismod, tincidunt elementum ex. Nullam cursus ipsum ante, eu auctor purus vehicula quis.",
       link: "http://steinerstudios.com",
@@ -82,7 +82,7 @@ steiner = PortItem.create(
       )
 
 suny = PortItem.create(
-      image: "assets/images/suny.png",
+      image: "assets/images/port_items/suny.png",
       title: "SUNY Plattsburgh",
       description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras auctor, odio et mattis blandit, justo tortor varius purus, auctor placerat neque leo et ipsum. Sed rutrum augue mollis, feugiat est ac, consectetur elit. Nunc sit amet cursus massa. Aliquam bibendum neque arcu, eget mattis ligula vestibulum vitae. Integer nec massa vel enim commodo dictum et ac velit. Vivamus nulla lorem, iaculis vel luctus vel, rhoncus eu dui. Mauris fermentum ac nisl quis condimentum. Ut sagittis elit sed orci pretium imperdiet. Aliquam euismod ex sem, feugiat tincidunt dui rutrum ac. Pellentesque sem ex, egestas nec justo euismod, tincidunt elementum ex. Nullam cursus ipsum ante, eu auctor purus vehicula quis.",
       link: "http://web.plattsburgh.edu",
@@ -90,7 +90,7 @@ suny = PortItem.create(
       )
 
 thebluecarboninitiative = PortItem.create(
-      image: "assets/images/thebluecarboninitiative.png",
+      image: "assets/images/port_items/thebluecarboninitiative.png",
       title: "The Blue Carbon Initiative",
       description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras auctor, odio et mattis blandit, justo tortor varius purus, auctor placerat neque leo et ipsum. Sed rutrum augue mollis, feugiat est ac, consectetur elit. Nunc sit amet cursus massa. Aliquam bibendum neque arcu, eget mattis ligula vestibulum vitae. Integer nec massa vel enim commodo dictum et ac velit. Vivamus nulla lorem, iaculis vel luctus vel, rhoncus eu dui. Mauris fermentum ac nisl quis condimentum. Ut sagittis elit sed orci pretium imperdiet. Aliquam euismod ex sem, feugiat tincidunt dui rutrum ac. Pellentesque sem ex, egestas nec justo euismod, tincidunt elementum ex. Nullam cursus ipsum ante, eu auctor purus vehicula quis.",
       link: "http://web.plattsburgh.edu",

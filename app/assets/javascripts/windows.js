@@ -1,7 +1,16 @@
 $( function() {
-
-  $(".window").hide()
+  
+  var windows = $(".window")
+  
+  windows.hide()
   $("#window_terminal").parent().show()
+  
+  windows.on("click", function(){
+    var title = $(this).find("span").attr("title")
+    $("#active_program a").text(title)
+    windows.css('z-index', 4)
+    $(this).css('z-index', 5)
+  });
 
   $(".min-btn").on("click", function(){
     var windowWidth = $(this).parents(".window").width()
@@ -23,7 +32,12 @@ $( function() {
     $(".dock ul").append('<li windowWidth='+ windowWidth +' windowHeight='+ windowHeight +' class="dock__item minimized" id="dock_item_'+ title.toLowerCase() +'_min"><a title="'+ title +'"><img src="assets/images/window.png"/></li>')
   })
   $(".max-btn").on("click", function(){
-    $(this).parents(".window").animate({width: $(window).width()})
+    $(this).parents(".window").animate({
+      width: $(window).width(),
+      height: $(window).height(),
+      left: 0,
+      top: 0
+    })
   })
   $(".close-btn").on("click", function(){
     var title = $(this).parents(".window__toolbar__buttons").siblings("span").attr("title")
@@ -31,6 +45,8 @@ $( function() {
   
     $(this).parents(".window").hide()
     $(dockItem).removeClass("active")
+
+    checkWindowsOpen()
   })
 
   $(document).on("click", ".dock__item", function() {
@@ -38,15 +54,24 @@ $( function() {
     dockItemClick(thisDockItem)
   })
 
+  function checkWindowsOpen() {
+    if (windows.is(":hidden")) {
+      $("#active_program a").text("Finder")
+    }
+  }
+
   function dockItemClick() { 
     var dockItemOpen = $(thisDockItem).hasClass("active")
     var dockItemMinimized = $(thisDockItem).hasClass("minimized")
-    var value = $(thisDockItem).children("a").attr("title").toLowerCase()
-
-    if (dockItemOpen === false) {
+    var title = $(thisDockItem).children("a").attr("title")
+    var value = title.toLowerCase()
+      
+      if (dockItemOpen === false) {
+      
       $(thisDockItem).addClass("active")
-      $(".window").css("z-index", 4)        
+      windows.css("z-index", 4)        
       $("#window_" + value).parent(".window").css('z-index', 5).show()
+      $("#active_program a").text(title)
     }
     if (dockItemMinimized === true ) {
         var windowWidth = $(thisDockItem).attr("windowWidth")
@@ -54,7 +79,7 @@ $( function() {
         var leftOffset = $(thisDockItem).offset().left
         
         $(thisDockItem).remove()
-        $(".window").css("z-index", 4)
+        windows.css("z-index", 4)
         
         $("#window_" + value).parent(".window").animate({
           top: 0,

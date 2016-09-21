@@ -19,6 +19,7 @@
             = link_to "Terminal"
       .desktop
         = yield
+      #dock_hover.dock__foreground
       .dock
         %ul
           %li.dock__item#dock_item_terminal.active{ onClick: "dockItemClick(this)"}

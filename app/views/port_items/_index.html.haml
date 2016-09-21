@@ -4,10 +4,13 @@
     %li.display-list__item
       %h2= port_item.title
       .display-list__image
-        %img{ src: port_item.image }
+        = raw port_item.show_port_img(port_item.image)
       %div
         %strong
           = port_item.year
+      %div{ role: "category_list"}
+        %p
+          = port_item.comma_separated_categories(port_item)
       %div
         %p
           = port_item.description

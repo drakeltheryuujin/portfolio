@@ -45,7 +45,6 @@
 .window--black-window {
 
   .window__content {
-    padding: 14px;
     background: $content-bg-black;
     color: $content-accent-gray;
     border: 1px solid lighten( $content-bg-black, 5% );
@@ -106,6 +105,7 @@
   position: relative;
 
   > section {
+    padding: 14px;
     position: absolute;
     width: 100%;
     z-index: 1;
