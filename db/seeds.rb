@@ -12,7 +12,7 @@ PortItemCategory.destroy_all
 
 activ = PortItem.create(
       image: "assets/images/port_items/activ.png",
-      title: "Agriculture.com",
+      title: "Activ Financial",
       description: "Activ Financial's informational website.\nResponsibilities: Hand-coded styles, pages, and jquery interactions and animations.",
       link: "http://www.activfinancial.com",
       year: 2010,
@@ -108,7 +108,7 @@ gust = PortItem.create(
       title: "Gust",
       description: "Platform for startups to build profiles that investors can search and fund.\nResponsibilities: Ported over a legacy application from Java into a test-driven Rails-based application, implemented HTML, CSS, Bootstrap and Ruby. Engineered and maintained an extremely large codebase of markup for cross-browser compatibility and styles. Created expressive and reusable code and front-end patterns. Developed dynamic web applications for cross platform/browser compatible (IE, Firefox, Safari, etc.).",
       link: "http://www.gust.com",
-      year: 2013,
+      year: 2014,
       )
 
 kitchengo = PortItem.create(
@@ -131,7 +131,7 @@ moment = PortItem.create(
       image: "assets/images/port_items/moment.png",
       title: "dressbarn's (MOM)ent",
       description: "One of dressbarn's yearly campaigns for Mother's Day, where users can share short stories about their moms' greatness.\nResponsibilities: Hand-coded markup for cross-browser compatibility and styles from PSD mockup. Implemented jQuery interactions.",
-      link: "http://mhlearningsolutions.mhhe.com",
+      link: "",
       year: 2013,
       )
 
@@ -139,7 +139,7 @@ popchips = PortItem.create(
       image: "assets/images/port_items/popchips.png",
       title: "Popchips: Year of Pop",
       description: "The winning interactive social marketing campaign for Popchips built season 1 episode 4 of \"The Pitch\".\nResponsibilities: Implementing layout and javascript interactivity with popcorn.js and isotype.js. Integrated social sharing and media.",
-      link: "http://mhlearningsolutions.mhhe.com",
+      link: "http://www.popchips.com/",
       year: 2013,
       )
 
@@ -163,7 +163,7 @@ rgr = PortItem.create(
       image: "assets/images/port_items/rgr.png",
       title: "Red Green Redemption Innanetz Version",
       description: "A competitive TDD game for evaluating developer programming skills at conferences, specifically GoRuCo 2015.\nResponsibilities: Hand-coded styles and markup for cross-browser compatibility.",
-      link: "",
+      link: "red-green-redemption.herokuapp.com",
       year: 2015,
       )
 
@@ -212,7 +212,7 @@ thebluecarboninitiative = PortItem.create(
       image: "assets/images/port_items/thebluecarboninitiative.png",
       title: "The Blue Carbon Initiative",
       description: "A website for Conservation International's Blue Carbon Initiative.\nResponsibilities: Hand-coded markup for cross-browser compatibility and styles for Wordpress. Integrated jQuery and Wordpress CMS.",
-      link: "http://web.plattsburgh.edu",
+      link: "thebluecarboninitiative.org",
       year: 2012,
       )
 
@@ -396,6 +396,7 @@ suny.categories << html_css
 suny.categories << mobile
 suny.categories << jquery
 suny.categories << social_media
+suny.categories << as3
 
 thebluecarboninitiative.categories << wordpress
 thebluecarboninitiative.categories << responsive

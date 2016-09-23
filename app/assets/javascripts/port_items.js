@@ -23,7 +23,7 @@ $(function() {
     $.get(gif_url).done(function(){
         changeImage(gif_url, object)
       }).fail(() =>{
-        alert("no gif")
+        //nothing changes
       }
     )}
   )
