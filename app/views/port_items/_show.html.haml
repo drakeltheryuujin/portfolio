@@ -3,7 +3,7 @@
     %li.display-list__item
       %h2= port_item.port_item.title
       .display-list__image
-        %img{ src: port_item.port_item.image }
+        %img{ role: "hover-change", src: port_item.port_item.image }
       %div
         %strong
           = port_item.port_item.year

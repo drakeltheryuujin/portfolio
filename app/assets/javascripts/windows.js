@@ -32,21 +32,35 @@ $( function() {
     $(".dock ul").append('<li windowWidth='+ windowWidth +' windowHeight='+ windowHeight +' class="dock__item minimized" id="dock_item_'+ title.toLowerCase() +'_min"><a title="'+ title +'"><img src="assets/images/window.png"/></li>')
   })
   $(".max-btn").on("click", function(){
-    $(this).parents(".window").animate({
-      width: $(window).width(),
-      height: $(window).height(),
-      left: 0,
-      top: 0
-    })
+
+    if ($(this).hasClass("open")) {
+      $(this).parents(".window").animate({
+        width: 640,
+        height: 320,
+        left: 0,
+        top: 32
+      })
+      $(this).removeClass("open")
+    }
+    else {
+      $(this).parents(".window").animate({
+        width: $(window).width(),
+        height: $(window).height() - 32,
+        left: 0,
+        top: 32
+      })
+      $(this).addClass("open")
+    }
   })
   $(".close-btn").on("click", function(){
     var title = $(this).parents(".window__toolbar__buttons").siblings("span").attr("title")
     var dockItem = $(".dock ul li#dock_item_" + title.toLowerCase())
-  
+    
     $(this).parents(".window").hide()
     $(dockItem).removeClass("active")
 
-    checkWindowsOpen()
+    var windowsOpen = $(".window").is(":visible")
+    checkWindowsOpen(windowsOpen)
   })
 
   $(document).on("click", ".dock__item", function() {
@@ -54,8 +68,8 @@ $( function() {
     dockItemClick(thisDockItem)
   })
 
-  function checkWindowsOpen() {
-    if (windows.is(":hidden")) {
+  function checkWindowsOpen(windowsOpen) {
+    if (windowsOpen === false) {
       $("#active_program a").text("Finder")
     }
   }

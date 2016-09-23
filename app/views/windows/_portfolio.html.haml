@@ -3,10 +3,8 @@
   = render "window_toolbar", title: "Portfolio"
   .window__content
     %section
-      -# %article#date_range.content-filter
-        -# %select
-          -# %option
-            -# Date Range
+      %article#date_range.content-filter
+        %label Filters:
       %article#filter_options.content-filter
         = collection_select(:category, :category_id, Category.all.order(name: :asc), :id, :name, {:include_blank => 'All Categories'}) 
       %article#port_items

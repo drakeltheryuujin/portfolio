@@ -10,17 +10,17 @@ class PortItem < ApplicationRecord
     end.join(", ")
   end
   
-  def show_port_img(url)
-    if has_gif?(url)
-      #create object with hover switch
-      "<img role='hover-change' src='#{url}'/>"
-    else
-      "<img src='#{url}'/>"
-    end
-  end
+  # def show_port_img(gif_url, url)
+    # if File.file?(gif_url)
+      # #create object with hover switch
+      # "<img role='hover-change' src='#{url}'/>"
+    # else
+      # "<img src='#{url}'/>"
+    # end
+  # end
 
   def has_gif?(url)
     gif_url = url.split(".")[0] << ".gif"
-    File.file?(gif_url)
+    show_port_img(gif_url, url)
   end
 end
