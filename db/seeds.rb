@@ -10,24 +10,32 @@ PortItem.destroy_all
 Category.destroy_all
 PortItemCategory.destroy_all
 
+activ = PortItem.create(
+      image: "assets/images/port_items/activ.png",
+      title: "Agriculture.com",
+      description: "Activ Financial's informational website.\nResponsibilities: Hand-coded styles, pages, and jquery interactions and animations.",
+      link: "http://www.activfinancial.com",
+      year: 2010,
+      )
+
 agriculture = PortItem.create(
       image: "assets/images/port_items/agriculture.png",
       title: "Agriculture.com",
-      description: "The first iteration of Agriculture.com, an industry news site for all things pertaining to agriculture.\n Responsibilities: Hand-coded styles and pages.",
+      description: "The first iteration of Agriculture.com, an industry news site for all things pertaining to agriculture.\nResponsibilities: Hand-coded styles and pages.",
       link: "http://www.agriculture.com",
       year: 2010,
       )
 buffets = PortItem.create(
       image: "assets/images/port_items/buffets.png",
       title: "Buffets: Family Night Quiz",
-      description: "Complete a quiz to download a coupon for discounts on a Buffets family meal.\n Responsibilities: Hand-coded styles, markup, and javascript interactions.",
+      description: "Complete a quiz to download a coupon for discounts on a Buffets family meal.\nResponsibilities: Hand-coded styles, markup for cross-browser compatibility, and javascript interactions.",
       link: "",
       year: 2013,
       )
 cnd = PortItem.create(
       image: "assets/images/port_items/cnd.png",
       title: "CND: Creative Nail Design",
-      description: "Creative Nail Design's website, built on Drupal.\n Responsibilities: Hand-coded markup, styles, and javascript interactions. Added additional features and pages to pre-existing website.",
+      description: "Creative Nail Design's website, built on Drupal.\nResponsibilities: Hand-coded markup for cross-browser compatibility, styles, and javascript interactions. Added additional features and pages to pre-existing website.",
       link: "http://www.cnd.com",
       year: 2013,
       )
@@ -38,17 +46,18 @@ crossword = PortItem.create(
       link: "",
       year: 2008,
       )
+
 dressbarnidea = PortItem.create(
       image: "assets/images/port_items/dbidea.png",
       title: "My dressbarn Idea",
-      description: "A website for dressbarn customers and employees to leave feedback.\n Responsibilities: Hand-code styles, javascript interactions, and markup.",
+      description: "A website for dressbarn customers and employees to leave feedback.\nResponsibilities: Hand-code styles, javascript interactions, and markup for cross-browser compatibility.",
       link: "",
       year: 2012,
       )
 eiko_koma = PortItem.create(
       image: "assets/images/port_items/eiko+koma.png",
       title: "Eiko + Koma",
-      description: "An interactive website for the performing artists Eiko and Koma.\n Responsibilities: Flash video conversion and compression, javascript interactions, hand-coded styles and markup.",
+      description: "An interactive website for the performing artists Eiko and Koma.\nResponsibilities: Flash video conversion and compression, javascript interactions, hand-coded styles and markup for cross-browser compatibility.",
       link: "http://www.eikoandkoma.org",
       year: 2010,
       )
@@ -56,15 +65,23 @@ eiko_koma = PortItem.create(
 enrevo = PortItem.create(
       image: "assets/images/port_items/enrevo.png",
       title: "Enrevo Solar",
-      description: "An informational website for Enrevo's energy services. \n Responsibilities: Hand-coded entire website with javascript interactions on Wordpress CMS/backend.",
+      description: "An informational website for Enrevo's energy services.\nResponsibilities: Hand-coded entire website with javascript interactions on Wordpress CMS/backend.",
       link: "http://www.enrevo.net",
+      year: 2011,
+      )
+
+fanfueled = PortItem.create(
+      image: "assets/images/port_items/enrevo.png",
+      title: "Fanfueled",
+      description: "A loyalty and marketing platform that leverages fan engagement/social sharing.\nResponsibilities: Built original site leveraging HTML, CSS, and Jquery.",
+      link: "http://www.fanfueled.com",
       year: 2011,
       )
 
 fashionweek = PortItem.create(
       image: "assets/images/port_items/fashionweek.png",
       title: "CND Fashion Week",
-      description: "Creative Nail Design's Fashion week coverage.\n Responsibilities: Hand-coded styles, markup, and javascript interactions.",
+      description: "Creative Nail Design's Fashion week coverage.\nResponsibilities: Hand-coded styles, markup for cross-browser compatibility, and javascript interactions.",
       link: "http://cnd.com/fwdigitalhq/",
       year: 2013,
       )
@@ -72,8 +89,8 @@ fashionweek = PortItem.create(
 fizzbuzz = PortItem.create(
       image: "assets/images/port_items/fizzbuzz.png",
       title: "FizzBuzz 2.0",
-      description: "A Jeopardy-style coding assessment game that quizzes participants on various programming-related topics.\n Responsibilities: Built out database schema and Rails API. Designed and hand-coded markup and styles. Seeded game data. Built in in-game interactions such as the question modal, correct/incorrect answer animations and timer.",
-      link: "#",
+      description: "A Jeopardy-style coding assessment game that quizzes participants on various programming-related topics.\nResponsibilities: Built out database schema and Rails API. Designed and hand-coded markup for cross-browser compatibility and styles. Seeded game data. Built in in-game interactions such as the question modal, correct/incorrect answer animations and timer.",
+      link: "https://github.com/talgoldfus/FizzBuzz-2.0",
       year: 2016,
       )
 
@@ -81,23 +98,31 @@ fizzbuzz = PortItem.create(
 grindfeed = PortItem.create(
       image: "assets/images/port_items/grindfeed.png",
       title: "Grindfeed",
-      description: "",
+      description: "Online social project management and tracking software.\nResponsibilities: Hand-coded styles and markup for cross-browser compatibility for cross-browser compatibility. Overhauled the codebase after it had been poorly done by outsourced contractors.",
       link: "http://www.grindfeed.com",
       year: 2012,
+      )
+
+gust = PortItem.create(
+      image: "assets/images/port_items/gust.png",
+      title: "Gust",
+      description: "Platform for startups to build profiles that investors can search and fund.\nResponsibilities: Ported over a legacy application from Java into a test-driven Rails-based application, implemented HTML, CSS, Bootstrap and Ruby. Engineered and maintained an extremely large codebase of markup for cross-browser compatibility and styles. Created expressive and reusable code and front-end patterns. Developed dynamic web applications for cross platform/browser compatible (IE, Firefox, Safari, etc.).",
+      link: "http://www.gust.com",
+      year: 2013,
       )
 
 kitchengo = PortItem.create(
       image: "assets/images/port_items/kitchengo.png",
       title: "KitchenGo!",
-      description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras auctor, odio et mattis blandit, justo tortor varius purus, auctor placerat neque leo et ipsum. Sed rutrum augue mollis, feugiat est ac, consectetur elit. Nunc sit amet cursus massa. Aliquam bibendum neque arcu, eget mattis ligula vestibulum vitae. Integer nec massa vel enim commodo dictum et ac velit. Vivamus nulla lorem, iaculis vel luctus vel, rhoncus eu dui. Mauris fermentum ac nisl quis condimentum. Ut sagittis elit sed orci pretium imperdiet. Aliquam euismod ex sem, feugiat tincidunt dui rutrum ac. Pellentesque sem ex, egestas nec justo euismod, tincidunt elementum ex. Nullam cursus ipsum ante, eu auctor purus vehicula quis.",
-      link: "#",
+      description: "An app for browsing and saving recipes that refers users to grocery stores with the ingredients for each recipe in their area\nResponsibilities: Coded user-specific actions and views so users would be able to see and interact with relevant data, such as favoriting, commenting, and selecting recipe categories. Utilized Boostrap and Bootstrap themes for styling. Used RSpec for TDD to reinforce working features.",
+      link: "gotokitchen.herokuapp.com",
       year: 2016,
       )
 
 mcgrawhill = PortItem.create(
       image: "assets/images/port_items/mcgrawhill.png",
       title: "McGraw Hill Learning Solutions",
-      description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras auctor, odio et mattis blandit, justo tortor varius purus, auctor placerat neque leo et ipsum. Sed rutrum augue mollis, feugiat est ac, consectetur elit. Nunc sit amet cursus massa. Aliquam bibendum neque arcu, eget mattis ligula vestibulum vitae. Integer nec massa vel enim commodo dictum et ac velit. Vivamus nulla lorem, iaculis vel luctus vel, rhoncus eu dui. Mauris fermentum ac nisl quis condimentum. Ut sagittis elit sed orci pretium imperdiet. Aliquam euismod ex sem, feugiat tincidunt dui rutrum ac. Pellentesque sem ex, egestas nec justo euismod, tincidunt elementum ex. Nullam cursus ipsum ante, eu auctor purus vehicula quis.",
+      description: "A dynamic website that takes a user through a prezi-style flow of pages.\nResponsibilities: Constructed website interface and styles. Utilized jQuery for animations and transitions. Programmed single-page transitions to trigger new urls required for tracking analytics and user progress.",
       link: "http://mhlearningsolutions.mhhe.com",
       year: 2013,
       )
@@ -105,7 +130,7 @@ mcgrawhill = PortItem.create(
 moment = PortItem.create(
       image: "assets/images/port_items/moment.png",
       title: "dressbarn's (MOM)ent",
-      description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras auctor, odio et mattis blandit, justo tortor varius purus, auctor placerat neque leo et ipsum. Sed rutrum augue mollis, feugiat est ac, consectetur elit. Nunc sit amet cursus massa. Aliquam bibendum neque arcu, eget mattis ligula vestibulum vitae. Integer nec massa vel enim commodo dictum et ac velit. Vivamus nulla lorem, iaculis vel luctus vel, rhoncus eu dui. Mauris fermentum ac nisl quis condimentum. Ut sagittis elit sed orci pretium imperdiet. Aliquam euismod ex sem, feugiat tincidunt dui rutrum ac. Pellentesque sem ex, egestas nec justo euismod, tincidunt elementum ex. Nullam cursus ipsum ante, eu auctor purus vehicula quis.",
+      description: "One of dressbarn's yearly campaigns for Mother's Day, where users can share short stories about their moms' greatness.\nResponsibilities: Hand-coded markup for cross-browser compatibility and styles from PSD mockup. Implemented jQuery interactions.",
       link: "http://mhlearningsolutions.mhhe.com",
       year: 2013,
       )
@@ -113,7 +138,7 @@ moment = PortItem.create(
 popchips = PortItem.create(
       image: "assets/images/port_items/popchips.png",
       title: "Popchips: Year of Pop",
-      description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras auctor, odio et mattis blandit, justo tortor varius purus, auctor placerat neque leo et ipsum. Sed rutrum augue mollis, feugiat est ac, consectetur elit. Nunc sit amet cursus massa. Aliquam bibendum neque arcu, eget mattis ligula vestibulum vitae. Integer nec massa vel enim commodo dictum et ac velit. Vivamus nulla lorem, iaculis vel luctus vel, rhoncus eu dui. Mauris fermentum ac nisl quis condimentum. Ut sagittis elit sed orci pretium imperdiet. Aliquam euismod ex sem, feugiat tincidunt dui rutrum ac. Pellentesque sem ex, egestas nec justo euismod, tincidunt elementum ex. Nullam cursus ipsum ante, eu auctor purus vehicula quis.",
+      description: "The winning interactive social marketing campaign for Popchips built season 1 episode 4 of \"The Pitch\".\nResponsibilities: Implementing layout and javascript interactivity with popcorn.js and isotype.js. Integrated social sharing and media.",
       link: "http://mhlearningsolutions.mhhe.com",
       year: 2013,
       )
@@ -121,7 +146,7 @@ popchips = PortItem.create(
 ptcp = PortItem.create(
       image: "assets/images/port_items/ptcp.png",
       title: "dressbarn Paint the Country Pink",
-      description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras auctor, odio et mattis blandit, justo tortor varius purus, auctor placerat neque leo et ipsum. Sed rutrum augue mollis, feugiat est ac, consectetur elit. Nunc sit amet cursus massa. Aliquam bibendum neque arcu, eget mattis ligula vestibulum vitae. Integer nec massa vel enim commodo dictum et ac velit. Vivamus nulla lorem, iaculis vel luctus vel, rhoncus eu dui. Mauris fermentum ac nisl quis condimentum. Ut sagittis elit sed orci pretium imperdiet. Aliquam euismod ex sem, feugiat tincidunt dui rutrum ac. Pellentesque sem ex, egestas nec justo euismod, tincidunt elementum ex. Nullam cursus ipsum ante, eu auctor purus vehicula quis.",
+      description: "An interactive marketing campaign for breast cancer awareness that encourages users all over the country to sign a pledge, where every signature donates $1 to the American Cancer Society.\nResponsibilities: Created and exported vector map data from Illustrator. Hooked in javascript interactivity for HTML5 canvas elements. Integrated social sharing. Used After Effects to create gif animations and leveraged javascript to trigger them.",
       link: "",
       year: 2012,
       )
@@ -129,15 +154,24 @@ ptcp = PortItem.create(
 pvblic = PortItem.create(
       image: "assets/images/port_items/pvblic.png",
       title: "Pvblic",
-      description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras auctor, odio et mattis blandit, justo tortor varius purus, auctor placerat neque leo et ipsum. Sed rutrum augue mollis, feugiat est ac, consectetur elit. Nunc sit amet cursus massa. Aliquam bibendum neque arcu, eget mattis ligula vestibulum vitae. Integer nec massa vel enim commodo dictum et ac velit. Vivamus nulla lorem, iaculis vel luctus vel, rhoncus eu dui. Mauris fermentum ac nisl quis condimentum. Ut sagittis elit sed orci pretium imperdiet. Aliquam euismod ex sem, feugiat tincidunt dui rutrum ac. Pellentesque sem ex, egestas nec justo euismod, tincidunt elementum ex. Nullam cursus ipsum ante, eu auctor purus vehicula quis.",
-      link: "http://pvblic.com",
+      description: "A website for an independent clothing company with Native and South American fashions.\nResponsibilities: Hand-coded entire website from scratch, leveraging jquery and PHP.",
+      link: "http://www.wearepvblic.com/",
       year: 2012,
       )
+
+rgr = PortItem.create(
+      image: "assets/images/port_items/rgr.png",
+      title: "Red Green Redemption Innanetz Version",
+      description: "A competitive TDD game for evaluating developer programming skills at conferences, specifically GoRuCo 2015.\nResponsibilities: Hand-coded styles and markup for cross-browser compatibility.",
+      link: "",
+      year: 2015,
+      )
+
 
 ryans = PortItem.create(
       image: "assets/images/port_items/ryans.png",
       title: "Ryans: Family Tree",
-      description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras auctor, odio et mattis blandit, justo tortor varius purus, auctor placerat neque leo et ipsum. Sed rutrum augue mollis, feugiat est ac, consectetur elit. Nunc sit amet cursus massa. Aliquam bibendum neque arcu, eget mattis ligula vestibulum vitae. Integer nec massa vel enim commodo dictum et ac velit. Vivamus nulla lorem, iaculis vel luctus vel, rhoncus eu dui. Mauris fermentum ac nisl quis condimentum. Ut sagittis elit sed orci pretium imperdiet. Aliquam euismod ex sem, feugiat tincidunt dui rutrum ac. Pellentesque sem ex, egestas nec justo euismod, tincidunt elementum ex. Nullam cursus ipsum ante, eu auctor purus vehicula quis.",
+      description: "An interactive facebook app where users can fill out a family tree for a coupon download.\nResponsibilities: Hand-coded styles, markup for cross-browser compatibility, and javascript interactions.",
       link: "",
       year: 2013,
       )
@@ -145,7 +179,7 @@ ryans = PortItem.create(
 steiner = PortItem.create(
       image: "assets/images/port_items/steiner.png",
       title: "Steiner Studios",
-      description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras auctor, odio et mattis blandit, justo tortor varius purus, auctor placerat neque leo et ipsum. Sed rutrum augue mollis, feugiat est ac, consectetur elit. Nunc sit amet cursus massa. Aliquam bibendum neque arcu, eget mattis ligula vestibulum vitae. Integer nec massa vel enim commodo dictum et ac velit. Vivamus nulla lorem, iaculis vel luctus vel, rhoncus eu dui. Mauris fermentum ac nisl quis condimentum. Ut sagittis elit sed orci pretium imperdiet. Aliquam euismod ex sem, feugiat tincidunt dui rutrum ac. Pellentesque sem ex, egestas nec justo euismod, tincidunt elementum ex. Nullam cursus ipsum ante, eu auctor purus vehicula quis.",
+      description: "A website for a Hollywood-style production facility in New York City.\nResponsibilities: Hand-coded markup for cross-browser compatibility and styles for Wordpress. Integrated Wordpress CMS.",
       link: "http://steinerstudios.com",
       year: 2012,
       )
@@ -153,7 +187,7 @@ steiner = PortItem.create(
 styleit = PortItem.create(
       image: "assets/images/port_items/styleit.png",
       title: "dressbarn's styleit",
-      description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras auctor, odio et mattis blandit, justo tortor varius purus, auctor placerat neque leo et ipsum. Sed rutrum augue mollis, feugiat est ac, consectetur elit. Nunc sit amet cursus massa. Aliquam bibendum neque arcu, eget mattis ligula vestibulum vitae. Integer nec massa vel enim commodo dictum et ac velit. Vivamus nulla lorem, iaculis vel luctus vel, rhoncus eu dui. Mauris fermentum ac nisl quis condimentum. Ut sagittis elit sed orci pretium imperdiet. Aliquam euismod ex sem, feugiat tincidunt dui rutrum ac. Pellentesque sem ex, egestas nec justo euismod, tincidunt elementum ex. Nullam cursus ipsum ante, eu auctor purus vehicula quis.",
+      description: "A Facebook app for creating and saving dressbarn outfits, to share socially and purchase in-store.\nResponsibilities: Created javascript interactions using jQuery. Hand-coded front-end.",
       link: "",
       year: 2012,
       )
@@ -161,7 +195,7 @@ styleit = PortItem.create(
 success = PortItem.create(
       image: "assets/images/port_items/success.png",
       title: "Success",
-      description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras auctor, odio et mattis blandit, justo tortor varius purus, auctor placerat neque leo et ipsum. Sed rutrum augue mollis, feugiat est ac, consectetur elit. Nunc sit amet cursus massa. Aliquam bibendum neque arcu, eget mattis ligula vestibulum vitae. Integer nec massa vel enim commodo dictum et ac velit. Vivamus nulla lorem, iaculis vel luctus vel, rhoncus eu dui. Mauris fermentum ac nisl quis condimentum. Ut sagittis elit sed orci pretium imperdiet. Aliquam euismod ex sem, feugiat tincidunt dui rutrum ac. Pellentesque sem ex, egestas nec justo euismod, tincidunt elementum ex. Nullam cursus ipsum ante, eu auctor purus vehicula quis.",
+      description: "The promotional website for Trump Success cologne.\nResponsibilities: Hand-coded entire website leveraging jQuery for media display.",
       link: "http://trumpsuccess.com",
       year: 2012,
       )
@@ -169,7 +203,7 @@ success = PortItem.create(
 suny = PortItem.create(
       image: "assets/images/port_items/suny.png",
       title: "SUNY Plattsburgh",
-      description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras auctor, odio et mattis blandit, justo tortor varius purus, auctor placerat neque leo et ipsum. Sed rutrum augue mollis, feugiat est ac, consectetur elit. Nunc sit amet cursus massa. Aliquam bibendum neque arcu, eget mattis ligula vestibulum vitae. Integer nec massa vel enim commodo dictum et ac velit. Vivamus nulla lorem, iaculis vel luctus vel, rhoncus eu dui. Mauris fermentum ac nisl quis condimentum. Ut sagittis elit sed orci pretium imperdiet. Aliquam euismod ex sem, feugiat tincidunt dui rutrum ac. Pellentesque sem ex, egestas nec justo euismod, tincidunt elementum ex. Nullam cursus ipsum ante, eu auctor purus vehicula quis.",
+      description: "A website for SUNY's Plattsburgh campus.\nResponsibilities: Integrated social media sharing and deep-linking. Followed accessibility standards for disabled student access. Created flash banner ads with Actionscript 3 for Google ad placement.",
       link: "http://web.plattsburgh.edu",
       year: 2012,
       )
@@ -177,7 +211,7 @@ suny = PortItem.create(
 thebluecarboninitiative = PortItem.create(
       image: "assets/images/port_items/thebluecarboninitiative.png",
       title: "The Blue Carbon Initiative",
-      description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras auctor, odio et mattis blandit, justo tortor varius purus, auctor placerat neque leo et ipsum. Sed rutrum augue mollis, feugiat est ac, consectetur elit. Nunc sit amet cursus massa. Aliquam bibendum neque arcu, eget mattis ligula vestibulum vitae. Integer nec massa vel enim commodo dictum et ac velit. Vivamus nulla lorem, iaculis vel luctus vel, rhoncus eu dui. Mauris fermentum ac nisl quis condimentum. Ut sagittis elit sed orci pretium imperdiet. Aliquam euismod ex sem, feugiat tincidunt dui rutrum ac. Pellentesque sem ex, egestas nec justo euismod, tincidunt elementum ex. Nullam cursus ipsum ante, eu auctor purus vehicula quis.",
+      description: "A website for Conservation International's Blue Carbon Initiative.\nResponsibilities: Hand-coded markup for cross-browser compatibility and styles for Wordpress. Integrated jQuery and Wordpress CMS.",
       link: "http://web.plattsburgh.edu",
       year: 2012,
       )
@@ -185,7 +219,7 @@ thebluecarboninitiative = PortItem.create(
 wsn = PortItem.create(
       image: "assets/images/port_items/wsn.png",
       title: "Washington Square News",
-      description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras auctor, odio et mattis blandit, justo tortor varius purus, auctor placerat neque leo et ipsum. Sed rutrum augue mollis, feugiat est ac, consectetur elit. Nunc sit amet cursus massa. Aliquam bibendum neque arcu, eget mattis ligula vestibulum vitae. Integer nec massa vel enim commodo dictum et ac velit. Vivamus nulla lorem, iaculis vel luctus vel, rhoncus eu dui. Mauris fermentum ac nisl quis condimentum. Ut sagittis elit sed orci pretium imperdiet. Aliquam euismod ex sem, feugiat tincidunt dui rutrum ac. Pellentesque sem ex, egestas nec justo euismod, tincidunt elementum ex. Nullam cursus ipsum ante, eu auctor purus vehicula quis.",
+      description: "NYU's Independent newspaper's website.\nResponsibilities: Hand-coded markup for cross-browser compatibility and styles for Wordpress. Integrated jQuery and Wordpress CMS.",
       link: "http://nyunews.com",
       year: 2011,
       )
@@ -222,6 +256,11 @@ social_media = Category.create(name: "Social Media Integration")
 
 # add categories
 
+activ.categories << html_css
+activ.categories << jquery
+activ.categories << expression_engine
+activ.categories << cms
+
 agriculture.categories << html_css
 agriculture.categories << mobile
 agriculture.categories << php
@@ -232,21 +271,20 @@ buffets.categories << jquery
 buffets.categories << social_media
 buffets.categories << facebook_app
 
-
 crossword.categories << adobe_flash
 crossword.categories << as2
-
-dressbarnidea.categories << html5_css3
-dressbarnidea.categories << social_media
-dressbarnidea.categories << jquery
-dressbarnidea.categories << cms
-dressbarnidea.categories << php
 
 cnd.categories << drupal
 cnd.categories << php
 cnd.categories << jquery
 cnd.categories << html_css
 cnd.categories << mobile
+
+dressbarnidea.categories << html5_css3
+dressbarnidea.categories << social_media
+dressbarnidea.categories << jquery
+dressbarnidea.categories << cms
+dressbarnidea.categories << php
 
 eiko_koma.categories << adobe_flash
 eiko_koma.categories << html_css
@@ -257,6 +295,21 @@ enrevo.categories << cms
 enrevo.categories << php
 enrevo.categories << html_css
 enrevo.categories << jquery
+
+gust.categories << ruby_on_rails
+gust.categories << bootstrap
+gust.categories << html5_css3
+gust.categories << api
+gust.categories << react
+gust.categories << redux
+gust.categories << sass
+gust.categories << mobile
+gust.categories << responsive
+
+fanfueled.categories << html_css
+fanfueled.categories << asp_net
+fanfueled.categories << responsive
+fanfueled.categories << jquery
 
 fashionweek.categories << html5_css3
 fashionweek.categories << php
@@ -283,6 +336,7 @@ kitchengo.categories << html5_css3
 kitchengo.categories << sass
 kitchengo.categories << mobile
 kitchengo.categories << responsive
+kitchengo.categories << api
 
 mcgrawhill.categories << cms
 mcgrawhill.categories << jquery
@@ -297,7 +351,7 @@ moment.categories << mobile
 
 pvblic.categories << html_css
 pvblic.categories << cms
-pvblic.categories << expression_engine
+pvblic.categories << php
 
 popchips.categories << html5_css3
 popchips.categories << responsive
@@ -311,6 +365,12 @@ ptcp.categories << javascript
 ptcp.categories << mobile
 ptcp.categories << responsive
 ptcp.categories << social_media
+
+rgr.categories << html5_css3
+rgr.categories << ruby_on_rails
+rgr.categories << api
+rgr.categories << bootstrap
+rgr.categories << sass
 
 ryans.categories << html5_css3
 ryans.categories << jquery
@@ -330,6 +390,7 @@ styleit.categories << social_media
 
 success.categories << html_css
 success.categories << jquery
+success.categories << responsive
 
 suny.categories << html_css
 suny.categories << mobile
