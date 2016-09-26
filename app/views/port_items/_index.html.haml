@@ -14,9 +14,10 @@
         %em
           = port_item.comma_separated_categories(port_item)
       %div
-        %strong
-          Description:
         %p
+          %strong
+            Description:
+          %br
           = port_item.description
       %div
         = link_to "view", port_item.link, target: "_blank"
