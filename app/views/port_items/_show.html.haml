@@ -5,12 +5,18 @@
       .display-list__image
         %img{ role: "hover-change", src: port_item.port_item.image }
       %div
+        %small
+          Year:
         %strong
           = port_item.port_item.year
       %div{ role: "category_list"}
-        %p
+        %small
+          Technologies:  
+        %em
           = port_item.port_item.comma_separated_categories(port_item.port_item)
       %div
+        %small
+          Description:
         %p
           = port_item.port_item.description
       %div

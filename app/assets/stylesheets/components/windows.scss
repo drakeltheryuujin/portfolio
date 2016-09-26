@@ -4,6 +4,7 @@
   width: 50%;
   box-shadow: 0px 10px 15px rgba(50, 50, 50, .5);
   z-index: 2;
+  height: 480px;
 
   .window__toolbar {
     @include window-toolbar;
