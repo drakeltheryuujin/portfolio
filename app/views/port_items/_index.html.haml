@@ -3,15 +3,19 @@
   - @port_items.each do |port_item| 
     %li.display-list__item
       %h2= port_item.title
+        = port_item.year
+        \: 
+        = port_item.year
       .display-list__image
         %img{ role: "hover-change", src: port_item.image }
+      %div{ role: "category_list"}
+        %strong
+          Technologies:  
+        %em
+          = port_item.comma_separated_categories(port_item.port_item)
       %div
         %strong
-          = port_item.year
-      %div{ role: "category_list"}
-        %p
-          = port_item.comma_separated_categories(port_item)
-      %div
+          Description:
         %p
           = port_item.description
       %div
