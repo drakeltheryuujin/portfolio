@@ -95,6 +95,14 @@ fizzbuzz = PortItem.create(
       )
 
 
+getawaze = PortItem.create(
+      image: "assets/images/port_items/getawaze.png",
+      title: "Getawaze",
+      description: "A mobile app using crowdsourced data that allows you to plot the most efficient route to your destination with minimal police interaction. Winner of Comedy Hack Day 2016.\nResponsibilities: Creating database schema and generating Rails API.",
+      link: "http://www.getawazeapp.com",
+      year: 2016,
+      )
+
 grindfeed = PortItem.create(
       image: "assets/images/port_items/grindfeed.png",
       title: "Grindfeed",
@@ -324,6 +332,10 @@ fizzbuzz.categories << html5_css3
 fizzbuzz.categories << sass
 fizzbuzz.categories << mobile
 fizzbuzz.categories << responsive
+
+getawaze.categories << mobile
+getawaze.categories << ruby_on_rails
+getawaze.categories << api
 
 grindfeed.categories << html_css
 grindfeed.categories << php
