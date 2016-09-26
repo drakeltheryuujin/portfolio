@@ -3,6 +3,8 @@ $( function() {
   var windows = $(".window")
   
   windows.hide()
+  $("#window_start").parent().show()
+  $("#window_terminal").parent().css("left", 640)
   $("#window_terminal").parent().show()
   
   windows.on("click", function(){
