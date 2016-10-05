@@ -12,9 +12,9 @@ module Portfolio
     # Application configuration should go into files in config/initializers
     # -- all .rb files in that directory are automatically loaded.
 
-logger           = ActiveSupport::Logger.new(STDOUT)
-logger.formatter = config.log_formatter
-config.log_tags  = [:subdomain, :uuid]
-config.logger    = ActiveSupport::TaggedLogging.new(logger)
+    logger           = ActiveSupport::Logger.new(STDOUT)
+    logger.formatter = config.log_formatter
+    config.log_tags  = [:subdomain, :uuid]
+    config.logger    = ActiveSupport::TaggedLogging.new(logger)
   end
 end
