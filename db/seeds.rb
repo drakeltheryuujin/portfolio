@@ -47,6 +47,14 @@ crossword = PortItem.create(
       year: 2008,
       )
 
+dancesafe = PortItem.create(
+      image: "assets/images/port_items/dancesafe.png",
+      title: "NY DanceSafe Harmreduction Kiosk",
+      description: "A digital kiosk packed full of health and safety information that can be diplayed, viewed, and spread via text, social media, or email for later viewing or sharing.",
+      link: "",
+      year: 2018,
+      )
+
 dressbarnidea = PortItem.create(
       image: "assets/images/port_items/dbidea.png",
       title: "My dressbarn Idea",
@@ -54,6 +62,7 @@ dressbarnidea = PortItem.create(
       link: "",
       year: 2012,
       )
+
 eiko_koma = PortItem.create(
       image: "assets/images/port_items/eiko+koma.png",
       title: "Eiko + Koma",
@@ -119,12 +128,21 @@ gust = PortItem.create(
       year: 2014,
       )
 
+
 kitchengo = PortItem.create(
       image: "assets/images/port_items/kitchengo.png",
       title: "KitchenGo!",
       description: "An app for browsing and saving recipes that refers users to grocery stores with the ingredients for each recipe in their area\nResponsibilities: Coded user-specific actions and views so users would be able to see and interact with relevant data, such as favoriting, commenting, and selecting recipe categories. Utilized Boostrap and Bootstrap themes for styling. Used RSpec for TDD to reinforce working features.",
       link: "gotokitchen.herokuapp.com",
       year: 2016,
+      )
+
+lecet = PortItem.create(
+      image: "assets/images/port_items/lecet.png",
+      title: "LECET Political Action Tool",
+      description: "A tool for labor unions/workers to research and contact local and state-level political officials for construction jobs in their respective districts",
+      link: "https://drive.google.com/file/d/0B1cl0Ek2-loaV2E4NkVWbFBoVU0/view",
+      year: 2017,
       )
 
 mcgrawhill = PortItem.create(
@@ -141,6 +159,14 @@ moment = PortItem.create(
       description: "One of dressbarn's yearly campaigns for Mother's Day, where users can share short stories about their moms' greatness.\nResponsibilities: Hand-coded markup for cross-browser compatibility and styles from PSD mockup. Implemented jQuery interactions.",
       link: "",
       year: 2013,
+      )
+
+nfl = PortItem.create(
+      image: "assets/images/port_items/nfl.png",
+      title: "NFL On Location Experience",
+      description: "An NFL On Location Experience marketing campaign",
+      link: "http://nflonlocation.com",
+      year: 2016,
       )
 
 popchips = PortItem.create(
@@ -233,6 +259,15 @@ wsn = PortItem.create(
       )
 
 
+wundea = PortItem.create(
+      image: "assets/images/port_items/wundea.png",
+      title: "Wundea",
+      description: "A mobile app",
+      link: "",
+      year: 2018,
+      )
+
+
 
 # categories
 
@@ -260,6 +295,10 @@ mobile = Category.create(name: "Mobile Compatible")
 responsive = Category.create(name: "Responsive")
 expression_engine = Category.create(name: "Expression Engine")
 social_media = Category.create(name: "Social Media Integration")
+angular = Category.create(name: "Angular")
+node = Category.create(name: "Node.js")
+loopback = Category.create(name: "Loopback")
+twilio = Category.create(name: "Twilio")
 
 
 # add categories
@@ -287,6 +326,16 @@ cnd.categories << php
 cnd.categories << jquery
 cnd.categories << html_css
 cnd.categories << mobile
+
+dancesafe.categories << html5_css3
+dancesafe.categories << react 
+dancesafe.categories << api
+dancesafe.categories << node
+dancesafe.categories << loopback
+dancesafe.categories << javacript
+dancesafe.categories << twilio
+dancesafe.categories << mobile
+dancesafe.categories << redux
 
 dressbarnidea.categories << html5_css3
 dressbarnidea.categories << social_media
@@ -350,6 +399,12 @@ kitchengo.categories << mobile
 kitchengo.categories << responsive
 kitchengo.categories << api
 
+lecet.categories << angular
+lecet.categories << node 
+lecet.categories << loopback
+lecet.categories << api
+lecet.categories << javasript
+
 mcgrawhill.categories << cms
 mcgrawhill.categories << jquery
 mcgrawhill.categories << html5_css3
@@ -360,6 +415,12 @@ moment.categories << jquery
 moment.categories << social_media
 moment.categories << responsive
 moment.categories << mobile
+
+nfl.categories << jquery
+nfl.categories << wordpress
+nfl.categories << cms
+nfl.categories << mobile 
+nfl.categories << responsive
 
 pvblic.categories << html_css
 pvblic.categories << cms
@@ -422,6 +483,12 @@ wsn.categories << php
 wsn.categories << html_css
 wsn.categories << social_media
 wsn.categories << mobile
+
+wundea.categories << react_native
+wundea.categories << react
+wundea.categories << mobile
+wundea.categories << api
+wundea.categories << drupal
 
 
 
